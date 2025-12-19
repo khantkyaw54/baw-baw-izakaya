@@ -15,22 +15,47 @@ hamburger.addEventListener("click", () => {
 });
 
 // Back to Top Buttonß
-    const backToTop = document.getElementById('backToTop');
+const backToTop = document.getElementById('backToTop');
 
 window.addEventListener('scroll', () => {
-  if (window.scrollY > 300) {
+    if (window.scrollY > 300) {
         backToTop.classList.add('show');
-  } else {
+    } else {
         backToTop.classList.remove('show');
-  }
+    }
 });
 
 backToTop.addEventListener('click', () => {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
 });
+
+// loader
+
+window.addEventListener('load', function () {
+    const loader = document.getElementById('loader');
+    const minTime = 1500; // minimum time in ms (1.5 seconds)
+    const startTime = performance.now(); // when loader appeared
+
+    const hideLoader = () => {
+        loader.classList.add('hidden');
+        setTimeout(() => {
+            loader.style.display = 'none';
+        }, 500); // match CSS fade duration
+    };
+
+    const elapsed = performance.now() - startTime;
+    if (elapsed < minTime) {
+        setTimeout(hideLoader, minTime - elapsed);
+    } else {
+        hideLoader();
+    }
+});
+
+
+
 
 
 
@@ -88,7 +113,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 entry.target.classList.remove("active"); // reset on scroll up
             }
         });
-    }, { threshold: 0.2 });
+    }, { threshold: 0.1 });
 
     voiceItems.forEach(el => voiceObserver.observe(el));
 
