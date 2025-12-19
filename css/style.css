@@ -85,13 +85,33 @@ img {
   }
 }
 
+#backToTop {
+  position: fixed;
+  right: 0;
+  bottom: 40px;
+  width: 10%;
+  height: 10%;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s;
+  z-index: 1000;
+}
+
+#backToTop.show {
+  opacity: 1;
+  visibility: visible;
+}
+
 .picture {
   padding: 2.5rem 0;
   display: grid;
   grid-auto-flow: column;
   justify-content: center;
   align-items: center;
-  gap: 2.5rem;
+  gap: 1.25rem;
 }
 .picture__item {
   max-width: 7.5rem;
@@ -688,14 +708,15 @@ img {
   border-bottom: 1px dotted #000;
   margin-bottom: 1.25rem;
 }
+.item__day {
+  font-weight: bold;
+}
 .item__days {
-  display: grid;
   grid-auto-flow: column;
   justify-content: start;
   -moz-column-gap: 2.5rem;
        column-gap: 2.5rem;
 }
-
 .footer {
   position: relative;
   padding: 11.25rem 0;
@@ -743,12 +764,14 @@ img {
   text-align: center;
   margin-bottom: 2.5rem;
 }
-.footer__nav-list {
-  display: grid;
-  grid-auto-flow: column;
-  justify-content: center;
-  -moz-column-gap: 1.25rem;
-       column-gap: 1.25rem;
+@media (width >= 480px) {
+  .footer__nav-list {
+    grid-auto-flow: column;
+    justify-content: center;
+    -moz-column-gap: 1.25rem;
+         column-gap: 1.25rem;
+    display: grid;
+  }
 }
 .footer__nav-item {
   color: #fff;
@@ -891,10 +914,15 @@ img {
 
 .menu__mainvisual {
   padding: 15.625rem 0 9.375rem 0;
-  background: url(../images/menu-image.png) no-repeat 20% 20%/cover;
+  background: url(../images/menu-image01.png) no-repeat 40% center/cover;
   background-attachment: fixed;
   position: relative;
   z-index: 998;
+}
+@media (width >= 740px) {
+  .menu__mainvisual {
+    background: url(../images/menu-image02.png) no-repeat 40% center/cover;
+  }
 }
 .menu__mainvisual__inner {
   max-width: 1000px;
@@ -968,7 +996,6 @@ img {
 
 .popular {
   padding: 3.75rem 0;
-  margin-left: 3.125rem;
   position: relative;
 }
 .popular__items {
@@ -1533,7 +1560,7 @@ strong {
 ===================== */
 .main__contact {
   padding: 180px 20px;
-  background: #f4f4f4;
+  background: #f7f4e5;
 }
 
 .contact__inner {
@@ -1667,10 +1694,10 @@ strong {
 }
 
 .contact__visual-text {
+  width: 100%;
   position: absolute;
   bottom: 24px;
-  left: 24px;
-  background: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.9);
   padding: 16px 24px;
   border-radius: 12px;
   line-height: 1.6;

@@ -210,8 +210,6 @@ html {
     }
 }
 
-
-
 body {
     color: $color-text;
     font-family: $font-family-noto;
@@ -256,13 +254,34 @@ img {
     }
 }
 
+// Back to Top Button
+#backToTop {
+    position: fixed;
+    right: 0;
+    bottom: 40px;
+    width: 10%;
+    height: 10%;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s;
+    z-index: 1000;
+}
+
+#backToTop.show {
+    opacity: 1;
+    visibility: visible;
+}
+
 .picture {
     padding: rem(40) 0;
     display: grid;
     grid-auto-flow: column;
     justify-content: center;
     align-items: center;
-    gap: rem(40);
+    gap: rem(20);
 
     &__item {
         max-width: rem(120);
@@ -791,11 +810,19 @@ img {
 
     }
 
+    &__day {
+        font-weight: bold;
+
+
+    }
+
     &__days {
-        display: grid;
+
         grid-auto-flow: column;
         justify-content: start;
         column-gap: rem(40);
+
+        @include mq(desktop) {}
     }
 
 
@@ -854,17 +881,20 @@ img {
         margin-bottom: rem(40);
 
         &-list {
-            display: grid;
-            grid-auto-flow: column;
-            justify-content: center;
-            column-gap: rem(20);
+
+
+
+            @include mq(tablet) {
+                grid-auto-flow: column;
+                justify-content: center;
+                column-gap: rem(20);
+                display: grid;
+            }
         }
 
         &-item {
             color: #fff;
             display: block;
-
-
             position: relative;
             text-decoration: none;
             transition: all 0.3s ease;
@@ -1023,10 +1053,14 @@ img {
 
 .menu__mainvisual {
     padding: rem(250) 0 rem(150) 0;
-    background: url(../images/menu-image.png) no-repeat 20% 20%/cover;
+    background: url(../images/menu-image01.png) no-repeat 40% center/cover;
     background-attachment: fixed;
     position: relative;
     z-index: 998;
+
+    @include mq(desktop) {
+        background: url(../images/menu-image02.png) no-repeat 40% center/cover;
+    }
 
     &__inner {
         @include inner();
@@ -1082,7 +1116,7 @@ img {
 // ================================================================
 .popular {
     padding: rem(60) 0;
-    margin-left: rem(50);
+
 
     position: relative;
 
@@ -1474,7 +1508,7 @@ strong {
 ===================== */
 .main__contact {
     padding: 180px 20px;
-    background: #f4f4f4;
+    background: $color-base;
 }
 
 .contact__inner {
@@ -1578,17 +1612,21 @@ strong {
     height: 100%;
     object-fit: cover;
     border-radius: 16px;
+
 }
 
 .contact__visual-text {
+    width: 100%;
     position: absolute;
     bottom: 24px;
-    left: 24px;
-    background: rgba(255, 255, 255, 0.9);
+
+    background-color: rgba(255, 255, 255, 0.9);
     padding: 16px 24px;
     border-radius: 12px;
     line-height: 1.6;
     font-size: 14px;
+
+
 }
 
 /* responsive */
