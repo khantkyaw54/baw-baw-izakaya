@@ -1179,14 +1179,8 @@ img {
     position: relative;
     z-index: 998;
 
-    &::after {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background: linear-gradient(to bottom,
-                rgba(0, 0, 0, 0.45),
-                rgba(0, 0, 0, 0.25));
-    }
+
+
 
     @include mq(desktop) {
         position: relative;
@@ -1198,6 +1192,8 @@ img {
         @include inner();
 
     }
+
+
 }
 
 // ================================================================

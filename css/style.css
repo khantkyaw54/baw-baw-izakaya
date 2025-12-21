@@ -1041,12 +1041,6 @@ img {
   position: relative;
   z-index: 998;
 }
-.menu__mainvisual::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.25));
-}
 @media (width >= 740px) {
   .menu__mainvisual {
     position: relative;
