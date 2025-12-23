@@ -1,18 +1,3 @@
-// const hamburger = document.getElementById("hamburger");
-// const gnav = document.getElementById("gnav");
-// const a = document.querySelectorAll("#gnav a");
-
-// a.forEach((link) => {
-//     link.addEventListener("click", () => {
-//         hamburger.classList.remove("active");
-//         gnav.classList.remove("active");
-//     });
-// });
-
-// hamburger.addEventListener("click", () => {
-//     hamburger.classList.toggle("active");
-//     gnav.classList.toggle("active");
-// });
 
 const hamburger = document.getElementById("hamburger");
 const gnav = document.getElementById("gnav");
@@ -63,25 +48,6 @@ backToTop.addEventListener('click', () => {
 
 // loader
 
-window.addEventListener('load', function () {
-    const loader = document.getElementById('loader');
-    const minTime = 1000; // minimum time in ms (1.5 seconds)
-    const startTime = performance.now(); // when loader appeared
-
-    const hideLoader = () => {
-        loader.classList.add('hidden');
-        setTimeout(() => {
-            loader.style.display = 'none';
-        }, 500); // match CSS fade duration
-    };
-
-    const elapsed = performance.now() - startTime;
-    if (elapsed < minTime) {
-        setTimeout(hideLoader, minTime - elapsed);
-    } else {
-        hideLoader();
-    }
-});
 
 //header bar
 window.addEventListener("scroll", function () {
@@ -94,69 +60,20 @@ window.addEventListener("scroll", function () {
     }
 });
 
+// ===== Scroll Fade Animation =====
+const animateTargets = document.getElementsByClassName("animate");
 
+function scrollFade() {
+    let windowHeight = window.innerHeight;
 
+    for (let i = 0; i < animateTargets.length; i++) {
+        let elementTop = animateTargets[i].getBoundingClientRect().top;
 
-
-
-document.addEventListener("DOMContentLoaded", () => {
-
-    /* =====================
-    SECTION ANIMATIONS
-    ===================== */
-    const targets = document.querySelectorAll(".animate-target");
-
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add("animate-active");
-            } else {
-                entry.target.classList.remove("animate-active"); // repeat on scroll up
-            }
-        });
-    }, { threshold: 0.2 });
-
-    targets.forEach(el => observer.observe(el));
-
-
-
-    /* =====================
-       BACKGROUND FADE-IN
-       ===================== */
-    const bgTargets = document.querySelectorAll(".bg-fade");
-
-    const bgObserver = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add("active");
-            }
-        });
-    }, { threshold: 0.1 });
-
-    bgTargets.forEach(el => bgObserver.observe(el));
-
-
-
-    /* =====================
-       VOICE STAGGER ANIMATION
-       ===================== */
-    const voiceItems = document.querySelectorAll(".voice__item");
-
-    const voiceObserver = new IntersectionObserver(entries => {
-        entries.forEach((entry, i) => {
-            if (entry.isIntersecting) {
-                setTimeout(() => {
-                    entry.target.classList.add("active");
-                }, i * 1000); // stagger by 0.2 sec
-            } else {
-                entry.target.classList.remove("active"); // reset on scroll up
-            }
-        });
-    }, { threshold: 0.1 });
-
-    voiceItems.forEach(el => voiceObserver.observe(el));
-
-    if (voiceItems.length) {
-        voiceObserver.observe(voiceItems[0]);
+        if (elementTop < windowHeight - 120) {
+            animateTargets[i].classList.add("is-show");
+        }
     }
-});
+}
+
+window.addEventListener("scroll", scrollFade);
+window.addEventListener("load", scrollFade);
