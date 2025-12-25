@@ -1,30 +1,31 @@
 
 const hamburger = document.getElementById("hamburger");
 const gnav = document.getElementById("gnav");
-const a = document.querySelectorAll("#gnav a");
+const links = document.querySelectorAll("#gnav a");
 
 // Close menu when a link is clicked
-
-for (let i = 0; i < a.length; i++) {
-    a[i].addEventListener("click", function () {
+for (let i = 0; i < links.length; i++) {
+    links[i].addEventListener("click", function () {
         hamburger.classList.remove("active");
         gnav.classList.remove("active");
+        document.body.classList.remove("no-scroll");
     });
 }
 
-// Toggle menu when hamburger is clicked
+// Toggle menu
 hamburger.addEventListener("click", (e) => {
-    e.stopPropagation(); // prevent document click from triggering
+    e.stopPropagation();
     hamburger.classList.toggle("active");
     gnav.classList.toggle("active");
+    document.body.classList.toggle("no-scroll");
 });
 
 // Close menu when clicking outside
 document.addEventListener("click", (e) => {
-    // check if click is outside hamburger and gnav
     if (!hamburger.contains(e.target) && !gnav.contains(e.target)) {
         hamburger.classList.remove("active");
         gnav.classList.remove("active");
+        document.body.classList.remove("no-scroll");
     }
 });
 
