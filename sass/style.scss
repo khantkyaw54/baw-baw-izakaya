@@ -354,7 +354,7 @@ h1 {
     position: fixed;
     top: 0;
     right: -110%;
-    width: 100%;
+    width: 70%;
     height: 100vh;
     background: $color-base;
     padding-top: 100px;
@@ -381,6 +381,10 @@ h1 {
         text-decoration: none;
         transition: all 0.3s ease;
         text-align: center;
+
+        @include mq(tablet) {
+            font-size: 12px;
+        }
 
 
         &:hover {
