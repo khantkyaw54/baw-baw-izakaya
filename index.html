@@ -4,19 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="description"
+        content="BAW BAW is a Myanmar izakaya in Nagoya offering authentic Myanmar dishes in a welcoming atmosphere.">
+    <meta property="og:description"
+        content="Discover authentic Myanmar cuisine at BAW BAW Izakaya in Nagoya. Perfect for first-time visitors.">
+    <meta property="og:title" content="BAW BAW | Myanmar Izakaya in Nagoya">
+    <meta property="og:image" content="./images/ogp.png">
+    <meta property="og:url" content="https://octopus-7291.hippy.jp/bawbaw_izakaya/">
+    <meta property="og:type" content="website">
+
     <title>BAW BAW</title>
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/the-new-css-reset/css/reset.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link
         href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&family=Zen+Maru+Gothic:wght@300;400;500;700&display=swap"
         rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link
         href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Noto+Sans+JP:wght@100..900&display=swap"
         rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
-
 </head>
 
 <body>
@@ -37,7 +51,20 @@
                 <ul class="gnav__list">
                     <li class="gnav__item item-active"><a class="gnav__active" href="index.html">ホーム</a></li>
                     <li class="gnav__item"><a href="#about">私たちについて</a></li>
-                    <li class="gnav__item"><a href="#menu">お品書き</a></li>
+                    <li class="gnav__item item-active">
+                        <a class="gnav__active" href="index.html#menu">お品書き <span class="arrow">▼</span></a>
+                        <ul class="dropdown">
+                            <li><a href="menu.html#popular">人気</a></li>
+                            <li><a href="menu.html#lunch">ランチセット</a></li>
+                            <li><a href="menu.html#drink">飲み物</a></li>
+                            <li><a href="menu.html#salad">サラダ</a></li>
+                            <li><a href="menu.html#ramen">ラーメン</a></li>
+                            <li><a href="menu.html#fries">揚げ物</a></li>
+                            <li><a href="menu.html#dessert">デザート</a></li>
+                            <li><a href="menu.html#soup">スープ</a></li>
+                            <li><a href="menu.html#grilled">炒飯</a></li>
+                        </ul>
+                    </li>
                     <li class="gnav__item"><a href="#voice">お客様の声</a></li>
                     <li class="gnav__item"><a href="#news">お知らせ</a></li>
                     <li class="gnav__item"><a href="#information">店舗情報</a></li>
@@ -54,7 +81,7 @@
                 </p>
             </div>
         </section>
-        <button id="backToTop">
+        <button id="backToTop" aria-label="Back to top">
             <img src="./images/top.png" alt="Back to top">
         </button>
         <div class="background"></div>
@@ -70,11 +97,11 @@
                     </div>
                     <div class="about__images">
                         <div class="about__image about__image--item01"><img src="./images/about-image01.png"
-                                alt="about-image"></div>
+                                alt="about-image1"></div>
                         <div class="about__image about__image--item02"><img src="./images/about-image02.png"
-                                alt="about-image"></div>
-                        <div class="about__image about__iamge--item03"><img src="./images/about-image03.png"
-                                alt="about-image"></div>
+                                alt="about-image2"></div>
+                        <div class="about__image about__image--item03"><img src="./images/about-image03.png"
+                                alt="about-image3"></div>
                     </div>
                 </div>
             </div>
@@ -88,7 +115,7 @@
                         <a href="./menu.html" class="btn"> view more</a>
                     </div>
                     <div class="menu__pic">
-                        <img src="./images/menu-image02.png" alt="">
+                        <img src="./images/menu-image02.png" alt="menu-image">
                     </div>
                 </div>
             </div>
@@ -114,7 +141,8 @@
                     </div>
                     <div class="voice__item card">
                         <div class="customer">
-                            <img src="./images/person-girl-svgrepo-com (1).svg" alt="" class="customer__image">
+                            <img src="./images/person-girl-svgrepo-com (1).svg" alt="customer__image"
+                                class="customer__image">
                             <dl class="customer__profile">
                                 <dt class="customer__name">Shoon Lai Shwe</dt>
                                 <dd class="customer__detail">★★★★★</dd>
@@ -127,7 +155,8 @@
                     </div>
                     <div class="voice__item card">
                         <div class="customer">
-                            <img src="./images/person-girl-svgrepo-com (1).svg" alt="" class="customer__image">
+                            <img src="./images/person-girl-svgrepo-com (1).svg" alt="customer__image"
+                                class="customer__image">
                             <dl class="customer__profile">
                                 <dt class="customer__name">Amelia</dt>
                                 <dd class="customer__detail">★★★★★</dd>
@@ -139,7 +168,8 @@
                     </div>
                     <div class="voice__item card">
                         <div class="customer">
-                            <img src="./images/person-boy-svgrepo-com.svg" alt="" class="customer__image">
+                            <img src="./images/person-boy-svgrepo-com.svg" alt="customer__image"
+                                class="customer__image">
                             <dl class="customer__profile">
                                 <dt class="customer__name">Thar Htet</dt>
                                 <dd class="customer__detail">★★★★★</dd>
@@ -213,10 +243,7 @@
 
                         </div>
                     </div>
-
-
                 </div>
-            </div>
             </div>
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.2105972819!2d136.91196807556136!3d35.176303257546216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600371e4b2d69d89%3A0x40a7e032ee6c0f03!2zQkFXIEJBVyDlsYXphZLlsYs!5e0!3m2!1sen!2sjp!4v1765108790714!5m2!1sen!2sjp"
@@ -227,7 +254,7 @@
     </main>
     <footer class="footer">
         <div class="footer__inner">
-            <h1 class="footer__logo"><a href="index.html"><img src="./images/header-logo.png"></a></h1>
+            <div class="footer__logo"><a href="index.html"><img src="./images/header-logo.png"></a></div>
 
             <div class="footer__nav">
                 <ul class="footer__nav-list">
@@ -254,8 +281,8 @@
 
     </footer>
 
-
+    <script src="./script.js"></script>
 </body>
-<script src="./script.js"></script>
+
 
 </html>

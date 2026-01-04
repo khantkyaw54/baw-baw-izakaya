@@ -1,6 +1,6 @@
 
-const hamburger = document.getElementById("hamburger");
-const gnav = document.getElementById("gnav");
+const hamburger = document.querySelector("#hamburger");
+const gnav = document.querySelector("#gnav");
 const links = document.querySelectorAll("#gnav a");
 
 // Close menu when a link is clicked
@@ -30,7 +30,7 @@ document.addEventListener("click", (e) => {
 });
 
 // Back to Top Buttonß
-const backToTop = document.getElementById('backToTop');
+const backToTop = document.querySelector('#backToTop');
 
 window.addEventListener('scroll', () => {
     if (window.scrollY > 300) {
@@ -62,7 +62,7 @@ window.addEventListener("scroll", function () {
 });
 
 // ===== Scroll Fade Animation =====
-const animateTargets = document.getElementsByClassName("animate");
+const animateTargets = document.querySelectorAll(".animate");
 
 function scrollFade() {
     let windowHeight = window.innerHeight;

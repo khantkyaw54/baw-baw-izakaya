@@ -4,26 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="description"
+        content="BAW BAW is a Myanmar izakaya in Nagoya offering authentic Myanmar dishes in a welcoming atmosphere.">
+    <meta property="og:description"
+        content="Discover authentic Myanmar cuisine at BAW BAW Izakaya in Nagoya. Perfect for first-time visitors.">
+
+    <meta property="og:title" content="BAW BAW | Myanmar Izakaya in Nagoya">
+    <meta property="og:image" content="./images/ogp.png">
+    <meta property="og:url" content="https://octopus-7291.hippy.jp/bawbaw_izakaya/">
+    <meta property="og:type" content="website">
+
     <title>BAW BAW</title>
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/the-new-css-reset/css/reset.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link
         href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&family=Zen+Maru+Gothic:wght@300;400;500;700&display=swap"
         rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link
         href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Noto+Sans+JP:wght@100..900&display=swap"
         rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
-
 </head>
 
 <body>
-    <!-- Loader -->
-    <div id="loader">
-        <div class="spinner"></div>
-    </div>
+
     <header class="header">
         <div class="header__inner">
             <h1 class="header__logo">
@@ -42,7 +54,20 @@
                 <ul class="gnav__list">
                     <li class="gnav__item"><a class="gnav__active" href="index.html">ホーム</a></li>
                     <li class="gnav__item"><a href="index.html#about">私たちについて</a></li>
-                    <li class="gnav__item"><a href="index.html#menu">お品書き</a></li>
+                    <li class="gnav__item item-active">
+                        <a class="gnav__active" href="index.html#menu">お品書き <span class="arrow">▼</span></a>
+                        <ul class="dropdown">
+                            <li><a href="#popular">人気</a></li>
+                            <li><a href="#lunch">ランチセット</a></li>
+                            <li><a href="#drink">飲み物</a></li>
+                            <li><a href="#salad">サラダ</a></li>
+                            <li><a href="#ramen">ラーメン</a></li>
+                            <li><a href="#fries">揚げ物</a></li>
+                            <li><a href="#dessert">デザート</a></li>
+                            <li><a href="#soup">スープ</a></li>
+                            <li><a href="#grilled">炒飯</a></li>
+                        </ul>
+                    </li>
                     <li class="gnav__item"><a href="index.html#voice">お客様の声</a></li>
                     <li class="gnav__item"><a href="index.html#news">お知らせ</a></li>
                     <li class="gnav__item"><a href="index.html#information">店舗情報</a></li>
@@ -52,7 +77,7 @@
     </header>
     <main class="main__contact">
 
-        <button id="backToTop"><img src="./images/top.png" alt="backToTop"></button>
+        <button id="backToTop" aria-label="Back to top"><img src="./images/top.png" alt="backToTop"></button>
         <section class="contact">
             <div class="contact__inner">
 
@@ -96,7 +121,7 @@
 
                     <!-- IMAGE -->
                     <div class="contact__visual">
-                        <img src="./images/contact-image.png" alt="BAW BAW 店舗">
+                        <img src="./images/contact-image.webp" alt="BAW BAW 店舗">
                         <p class="contact__visual-text">
                             スタッフ一同、皆さまのご来店を心よりお待ちしております。
                         </p>
@@ -109,12 +134,12 @@
     </main>
     <footer class="footer">
         <div class="footer__inner">
-            <h1 class="footer__logo"><a href="index.html"><img src="./images/header-logo.png"></a>
-            </h1>
+            <div class="footer__logo"><a href="index.html"><img src="./images/header-logo.png"></a>
+            </div>
 
             <div class="footer__nav">
                 <ul class="footer__nav-list">
-                    <li class="footer__nav-item"><a href="top.html">Home</a></li>
+                    <li class="footer__nav-item"><a href="index.html">Home</a></li>
                     <li class="footer__nav-item"><a href="index.html#about">About us</a></li>
                     <li class="footer__nav-item"><a href="index.html#menu">Menu</a></li>
                     <li class="footer__nav-item"><a href="index.html#voice">Customer's voice</a></li>

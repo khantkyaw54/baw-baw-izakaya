@@ -1,3 +1,4 @@
+@charset "UTF-8";
 small {
   font-size: 0.75rem;
   color: #000;
@@ -171,6 +172,77 @@ h1 {
   align-items: center;
 }
 
+/* ================================
+   Professional Dropdown Menu
+================================ */
+.dropdown {
+  display: none;
+}
+
+.arrow {
+  font-size: 0.7em;
+  margin-left: 6px;
+  transition: transform 0.25s ease;
+  opacity: 0.7;
+}
+
+@media (width >= 740px) {
+  .gnav__item {
+    position: relative;
+  }
+  .dropdown {
+    position: absolute;
+    top: 110%;
+    left: 0;
+    transform: translateX(-50%);
+    min-width: 220px;
+    padding: 12px 0;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12), 0 2px 6px rgba(0, 0, 0, 0.08);
+    z-index: 1000;
+    /* animation */
+    opacity: 0;
+    visibility: hidden;
+    transform-origin: top center;
+    transition: opacity 0.25s ease, transform 0.25s ease;
+  }
+  .gnav__item:hover .dropdown {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+  }
+  .dropdown li a {
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #222;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+  }
+  .dropdown li a::before {
+    content: "•";
+    color: #ea5506;
+    margin-right: 10px;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+  }
+  .dropdown li a:hover {
+    background: rgba(0, 0, 0, 0.04);
+    color: #ea5506;
+  }
+  .dropdown li a:hover::before {
+    opacity: 1;
+  }
+  .gnav__item:hover .arrow {
+    transform: rotate(180deg);
+    opacity: 1;
+  }
+}
 .gnav {
   /* ===========================
      MOBILE NAV (default)
@@ -472,7 +544,7 @@ body.no-scroll {
 }
 @media (width >= 740px) {
   .menu {
-    padding-bottom: 15.625rem;
+    padding-bottom: 17.5rem;
   }
 }
 .menu__title {
@@ -630,7 +702,7 @@ body.no-scroll {
 }
 
 .news {
-  padding: 11.25rem 0 21.875rem 0;
+  padding: 11.25rem 0 23.75rem 0;
   position: relative;
   color: #FFF;
 }
