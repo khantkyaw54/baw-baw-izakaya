@@ -893,6 +893,13 @@ body.no-scroll {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 2.5rem;
+  width: 9.375rem;
+  height: auto;
+}
+@media (width >= 740px) {
+  .footer__logo {
+    width: 11.25rem;
+  }
 }
 .footer__nav {
   text-align: center;
@@ -1008,7 +1015,7 @@ body.no-scroll {
   .menu__mainvisual {
     position: relative;
     background-attachment: fixed;
-    background: url(../images/menu-image02.png) no-repeat 40% center/cover;
+    background: url(../images/menu-image02.jpg) no-repeat 40% center/cover;
   }
 }
 .menu__mainvisual__inner {
@@ -1134,7 +1141,7 @@ body.no-scroll {
 }
 .popular__post {
   display: grid;
-  grid-template-columns: 8.4375rem 12.5rem;
+  grid-template-columns: 8.4375rem 1fr;
   -moz-column-gap: 1.5625rem;
        column-gap: 1.5625rem;
   align-items: center;
@@ -1206,7 +1213,7 @@ body.no-scroll {
 }
 .lunch__post {
   display: grid;
-  grid-template-columns: 8.4375rem 12.5rem;
+  grid-template-columns: 8.4375rem 1fr;
   -moz-column-gap: 1.5625rem;
        column-gap: 1.5625rem;
   align-items: center;

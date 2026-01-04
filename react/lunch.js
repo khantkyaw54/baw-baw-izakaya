@@ -6,24 +6,25 @@ const lunchData = [
     { num: 5, title: "ココナッツミルクラーメン", image: "./images/coconnut-ramen.png" },
 ];
 
-function Lunch() {
+const Lunch = () => {
     return (
         <div className="lunch__items">
-            {lunchData.map(item => (
+            {popularData.map((item) => (
                 <div className="lunch__post post" key={item.num}>
                     <img
                         src={item.image}
                         alt={item.title}
                         className="post__image"
                     />
+
                     <div className="post__content">
-                        <h3 className="post__title">{item.title}</h3>
+                        <h3>{item.title}</h3>
                     </div>
                 </div>
             ))}
         </div>
     );
-}
+};
 
 ReactDOM.createRoot(
     document.querySelector("#lunch-root")
