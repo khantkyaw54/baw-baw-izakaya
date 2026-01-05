@@ -47,8 +47,6 @@ backToTop.addEventListener('click', () => {
     });
 });
 
-// loader
-
 
 //header bar
 window.addEventListener("scroll", function () {
