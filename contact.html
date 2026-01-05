@@ -5,31 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta property="description"
+    <!-- SEO -->
+    <meta name="description"
         content="BAW BAW is a Myanmar izakaya in Nagoya offering authentic Myanmar dishes in a welcoming atmosphere.">
+
+    <!-- OGP -->
+    <meta property="og:title" content="BAW BAW | Myanmar Izakaya in Nagoya">
     <meta property="og:description"
         content="Discover authentic Myanmar cuisine at BAW BAW Izakaya in Nagoya. Perfect for first-time visitors.">
-
-    <meta property="og:title" content="BAW BAW | Myanmar Izakaya in Nagoya">
     <meta property="og:image" content="./images/ogp.png">
     <meta property="og:url" content="https://octopus-7291.hippy.jp/bawbaw_izakaya/">
     <meta property="og:type" content="website">
 
     <title>BAW BAW</title>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/the-new-css-reset/css/reset.min.css">
-
+    <!-- Google Fonts (optimized) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
 
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- CSS (local, non-render-blocking) -->
     <link rel="preload" href="./css/style.css" as="style" onload="this.rel='stylesheet'">
     <noscript>
         <link rel="stylesheet" href="./css/style.css">
     </noscript>
+
+    <!-- React (defer so it does NOT block rendering) -->
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js" defer crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" defer crossorigin></script>
+
+    <!-- Babel (only needed for JSX, deferred) -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js" defer></script>
 </head>
 
 <body>
