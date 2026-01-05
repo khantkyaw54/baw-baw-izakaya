@@ -1168,7 +1168,7 @@ body.no-scroll {
 
 .menu__mainvisual {
     padding: rem(250) 0 rem(150);
-    background: url(../images/menu-image01.jpg) no-repeat 40% center / cover;
+    background: url(../images/menu-image02.jpg) no-repeat 40% center / cover;
 
 
 
@@ -1179,7 +1179,7 @@ body.no-scroll {
     @include mq(desktop) {
         position: relative;
         background-attachment: fixed;
-        background: url(../images/menu-image01.jpg) no-repeat 40% center / cover;
+        background: url(../images/menu-image02.jpg) no-repeat 40% center / cover;
 
     }
 
