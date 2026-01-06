@@ -17,14 +17,12 @@ $space-xxxl: 3rem; // 48px
 $color-text: #000;
 $color-base: #f7f4e5;
 $color-main: #640125;
-$color-accent: #ea5506;
+$color-accent: #ee7800;
 $color-bg: #f7fcfe;
 
 // --- Typography ---
 $font-size-base: 16;
-$font-family-gothic: "Zen Kaku Gothic New",
-    "Hiragino Kaku Gothic ProN",
-    "Yu Gothic",
+$font-family-noto: "Noto Sans JP",
     sans-serif;
 $font-family-poppins: "Poppins",
     sans-serif;
@@ -75,7 +73,7 @@ $breakpoints: (
     font-weight: bold;
     line-height: math.div(54, 32);
     text-align: center;
-    font-family: $font-family-gothic;
+    font-family: $font-family-noto;
 
 
     &::before {
@@ -215,7 +213,7 @@ html {
 
 body {
     color: $color-text;
-    font-family: $font-family-gothic;
+    font-family: $font-family-noto;
     font-size: rem(14);
     line-height: math.div(30, 14);
     letter-spacing: ls(25);
@@ -244,14 +242,14 @@ h1 {
 }
 
 .btn {
+    cursor: pointer;
     font-family: $font-family-poppins;
     text-transform: capitalize;
     font-size: 16px;
-    font-weight: bold;
     padding: rem(10) 0;
     text-align: center;
     background-color: $color-accent;
-    color: #fff;
+    color: #000;
     display: block;
     width: 150px;
     border-radius: 35px;
@@ -264,10 +262,6 @@ h1 {
         transform: scale(1.05);
         box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
         opacity: 0.95;
-    }
-
-    @include mq(desktop) {
-        display: inline-block;
     }
 }
 
@@ -471,7 +465,7 @@ h1 {
         margin-bottom: 20px;
         color: #000;
         font-weight: bold;
-        font-family: $font-family-gothic;
+        font-family: $font-family-noto;
         position: relative;
         text-decoration: none;
         transition: all 0.3s ease;
@@ -732,9 +726,7 @@ body.no-scroll {
         }
     }
 
-    &__content .btn {
-        display: block;
-    }
+
 
 
 }
@@ -774,6 +766,10 @@ body.no-scroll {
             grid-template-columns: 1fr 450px;
             column-gap: rem(40);
         }
+    }
+
+    &__content .btn {
+        color: #fff;
     }
 
     &__pic {
@@ -1715,28 +1711,6 @@ strong {
 
     }
 
-    /* button */
-    &__btn {
-        width: 100%;
-        padding: 16px;
-        background: $color-accent;
-        color: #fff;
-        font-size: 16px;
-        border-radius: 30px;
-        border: none;
-        cursor: pointer;
-        transition: transform 0.2s, box-shadow 0.2s;
-    }
-
-    &__btn:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-    }
-
-    &__btn:active {
-        transform: translateY(2px);
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
-    }
 
     /* image */
     &__visual {

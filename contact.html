@@ -19,19 +19,23 @@
 
     <title>BAW BAW</title>
 
-<!-- Preconnect (important) -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<!-- Zen Kaku Gothic New (JP) -->
-<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Load font asynchronously -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+        onload="this.onload=null;this.rel='stylesheet'">
 
-<!-- Poppins (EN) -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+    </noscript>
+    <link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/reset-css/reset.min.css"
+        onload="this.onload=null;this.rel='stylesheet'">
 
-
-    <!-- CSS (NORMAL, no tricks) -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/the-new-css-reset/css/reset.min.css">
+    <noscript>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css/reset.min.css">
+    </noscript>
     <link rel="stylesheet" href="./css/style.css">
 
     <!-- React (deferred) -->
@@ -122,8 +126,8 @@
                                 <textarea placeholder="お問い合わせ内容をご入力ください"></textarea>
                             </div>
 
-                            <button type="submit" class="contact__btn">
-                                送信する
+                            <button type="submit" class="btn">
+                                submit
                             </button>
                         </form>
                     </div>

@@ -19,19 +19,24 @@
 
     <title>BAW BAW</title>
 
-    <!-- Preconnect (important) -->
+    <!-- Preconnect -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <!-- Zen Kaku Gothic New (JP) -->
-    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;700&display=swap"
-        rel="stylesheet">
+    <!-- Load font asynchronously -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+        onload="this.onload=null;this.rel='stylesheet'">
 
-    <!-- Poppins (EN) -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+    </noscript>
 
-    <!-- CSS (NORMAL, no tricks) -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/the-new-css-reset/css/reset.min.css">
+    <link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/reset-css/reset.min.css"
+        onload="this.onload=null;this.rel='stylesheet'">
+
+    <noscript>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css/reset.min.css">
+    </noscript>
     <link rel="stylesheet" href="./css/style.css">
 
     <!-- React (deferred) -->
@@ -255,8 +260,9 @@
             </div>
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.2105972819!2d136.91196807556136!3d35.176303257546216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600371e4b2d69d89%3A0x40a7e032ee6c0f03!2zQkFXIEJBVyDlsYXphZLlsYs!5e0!3m2!1sen!2sjp!4v1765108790714!5m2!1sen!2sjp"
-                height="400" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade" class="information__map"></iframe>
+                class="information__map" title="BAW BAW Izakaya location map" height="400" style="border:0;"
+                allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
         </section>
 
     </main>
@@ -275,12 +281,20 @@
                 </ul>
             </div>
             <div class="footer__sns">
-                <a href="https://www.instagram.com/baw_baw_izakaya/" class="footer__sns-icon instagram"><i
-                        class="fa-brands fa-instagram" aria-label="bawbaw_instagram"></i></a>
-                <a href="https://www.facebook.com/p/Baw-Baw-100075854921593/" class="footer__sns-icon facebook"><i
-                        class="fa-brands fa-facebook" aria-label="bawbaw_facebook"></i></a>
-                <a href="https://www.tiktok.com/@bawbaw002" class="footer__sns-icon youtube"><i
-                        class="fa-brands fa-tiktok" aria-label="bawbaw_youtube"></i></a>
+                <a href="https://www.instagram.com/baw_baw_izakaya/" class="footer__sns-icon instagram"
+                    aria-label="Baw Baw Izakaya Instagram">
+                    <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                </a>
+
+                <a href="https://www.facebook.com/p/Baw-Baw-100075854921593/" class="footer__sns-icon facebook"
+                    aria-label="Baw Baw Izakaya Facebook">
+                    <i class="fa-brands fa-facebook" aria-hidden="true"></i>
+                </a>
+
+                <a href="https://www.tiktok.com/@bawbaw002" class="footer__sns-icon youtube"
+                    aria-label="Baw Baw Izakaya TikTok">
+                    <i class="fa-brands fa-tiktok" aria-hidden="true"></i>
+                </a>
             </div>
             <small class="footer__copy">&copy; 2025 BAW BAW. All Rights Reserved.</small>
 

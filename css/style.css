@@ -5,7 +5,7 @@ small {
   display: block;
   text-align: right;
   font-weight: bold;
-  color: #ea5506;
+  color: #ee7800;
 }
 
 html {
@@ -46,7 +46,7 @@ html {
 
 body {
   color: #000;
-  font-family: "Zen Kaku Gothic New", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
   font-size: 0.875rem;
   line-height: 2.1428571429;
   letter-spacing: 0.025em;
@@ -73,14 +73,14 @@ h1 {
 }
 
 .btn {
+  cursor: pointer;
   font-family: "Poppins", sans-serif;
   text-transform: capitalize;
   font-size: 16px;
-  font-weight: bold;
   padding: 0.625rem 0;
   text-align: center;
-  background-color: #ea5506;
-  color: #fff;
+  background-color: #ee7800;
+  color: #000;
   display: block;
   width: 150px;
   border-radius: 35px;
@@ -93,11 +93,6 @@ h1 {
   transform: scale(1.05);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   opacity: 0.95;
-}
-@media (width >= 740px) {
-  .btn {
-    display: inline-block;
-  }
 }
 
 #backToTop {
@@ -230,7 +225,7 @@ h1 {
   }
   .dropdown li a::before {
     content: "•";
-    color: #ea5506;
+    color: #ee7800;
     margin-right: 10px;
     font-size: 14px;
     opacity: 0;
@@ -238,7 +233,7 @@ h1 {
   }
   .dropdown li a:hover {
     background: rgba(0, 0, 0, 0.04);
-    color: #ea5506;
+    color: #ee7800;
   }
   .dropdown li a:hover::before {
     opacity: 1;
@@ -274,7 +269,7 @@ h1 {
   margin-bottom: 20px;
   color: #000;
   font-weight: bold;
-  font-family: "Zen Kaku Gothic New", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
   position: relative;
   text-decoration: none;
   transition: all 0.3s ease;
@@ -300,7 +295,7 @@ h1 {
   right: 0;
   height: 3px;
   max-width: 6.25rem;
-  background-color: #ea5506;
+  background-color: #ee7800;
   transform: scaleY(0);
   transform-origin: bottom;
   transition: transform 0.3s ease;
@@ -477,7 +472,7 @@ body.no-scroll {
   font-weight: bold;
   line-height: 1.6875;
   text-align: center;
-  font-family: "Zen Kaku Gothic New", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
 }
 .about__title::before {
   content: "about us";
@@ -542,9 +537,6 @@ body.no-scroll {
   grid-column: 2/3;
   grid-row: 2/3;
 }
-.about__content .btn {
-  display: block;
-}
 
 .menu {
   padding: 5rem 0 13.125rem 0;
@@ -563,7 +555,7 @@ body.no-scroll {
   font-weight: bold;
   line-height: 1.6875;
   text-align: center;
-  font-family: "Zen Kaku Gothic New", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
 }
 .menu__title::before {
   content: "menu";
@@ -606,6 +598,9 @@ body.no-scroll {
     -moz-column-gap: 2.5rem;
          column-gap: 2.5rem;
   }
+}
+.menu__content .btn {
+  color: #fff;
 }
 .menu__pic {
   text-align: center;
@@ -653,7 +648,7 @@ body.no-scroll {
   font-weight: bold;
   line-height: 1.6875;
   text-align: center;
-  font-family: "Zen Kaku Gothic New", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
 }
 .voice__title::before {
   content: "customer's voice";
@@ -699,7 +694,7 @@ body.no-scroll {
 }
 .customer dl dd {
   font-size: 16px;
-  color: #ea5506;
+  color: #ee7800;
 }
 .customer dt {
   font-weight: bold;
@@ -740,7 +735,7 @@ body.no-scroll {
   font-weight: bold;
   line-height: 1.6875;
   text-align: center;
-  font-family: "Zen Kaku Gothic New", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
 }
 .news__title::before {
   content: "news";
@@ -779,7 +774,7 @@ body.no-scroll {
 .news__date {
   display: block;
   font-weight: bold;
-  color: #ea5506;
+  color: #ee7800;
   margin-bottom: 8px;
   font-size: 0.875rem;
 }
@@ -821,7 +816,7 @@ body.no-scroll {
   font-weight: bold;
   line-height: 1.6875;
   text-align: center;
-  font-family: "Zen Kaku Gothic New", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
 }
 .information__title::before {
   content: "information";
@@ -860,7 +855,7 @@ body.no-scroll {
 
 /*item*/
 .item__title {
-  color: #ea5506;
+  color: #ee7800;
   font-weight: bold;
   font-size: 1.125rem;
   padding-bottom: 1.25rem;
@@ -950,7 +945,7 @@ body.no-scroll {
   right: 0;
   height: 2px;
   max-width: 6.25rem;
-  background-color: #ea5506;
+  background-color: #ee7800;
   transform: scaleY(0);
   transform-origin: bottom;
   transition: transform 0.3s ease;
@@ -983,7 +978,7 @@ body.no-scroll {
 }
 
 .item-active {
-  color: #ea5506;
+  color: #ee7800;
 }
 
 .instagram i {
@@ -1091,14 +1086,14 @@ body.no-scroll {
 .icon-item:hover {
   transform: scale(1.05);
   transition: all 0.3s ease;
-  color: #ea5506;
+  color: #ee7800;
 }
 
 .mark {
   font-size: 1.125rem;
   font-weight: bold;
   margin-bottom: 2.5rem;
-  color: #ea5506;
+  color: #ee7800;
 }
 
 .popular {
@@ -1234,7 +1229,7 @@ body.no-scroll {
 }
 .lunch__price {
   text-align: center;
-  color: #ea5506;
+  color: #ee7800;
 }
 
 .drink {
@@ -1671,7 +1666,6 @@ strong {
   /* layout */
   /* card */
   /* fields */
-  /* button */
   /* image */
 }
 .contact__inner {
@@ -1692,7 +1686,7 @@ strong {
   font-weight: bold;
   line-height: 1.6875;
   text-align: center;
-  font-family: "Zen Kaku Gothic New", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
   margin-bottom: 12px;
 }
 .contact__title::before {
@@ -1746,7 +1740,7 @@ strong {
   margin-bottom: 6px;
 }
 .contact__field label span {
-  color: #ea5506;
+  color: #ee7800;
   font-size: 12px;
   margin-left: 6px;
 }
@@ -1762,26 +1756,7 @@ strong {
 }
 .contact__field input:focus, .contact__field textarea:focus {
   outline: none;
-  border-color: #ea5506;
-}
-.contact__btn {
-  width: 100%;
-  padding: 16px;
-  background: #ea5506;
-  color: #fff;
-  font-size: 16px;
-  border-radius: 30px;
-  border: none;
-  cursor: pointer;
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-.contact__btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-}
-.contact__btn:active {
-  transform: translateY(2px);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  border-color: #ee7800;
 }
 .contact__visual {
   flex: 1;
