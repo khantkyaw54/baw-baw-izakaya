@@ -19,10 +19,16 @@
 
     <title>BAW BAW</title>
 
-    <!-- Google Fonts (simple & safe) -->
+    <!-- Preconnect (important) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Zen Kaku Gothic New (JP) -->
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Poppins (EN) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
 
     <!-- CSS (NORMAL, no tricks) -->
@@ -42,7 +48,8 @@
     <header class="header">
         <div class="header__inner">
             <h1 class="header__logo">
-                <a href="index.html"><img src="./images/header-logo.png" alt="LOGO" loading="lazy"></a>
+                <a href="index.html"><img src="./images/header-logo.png" alt="LOGO" fetchpriority="high"
+                        decoding="async"></a>
             </h1>
 
 

@@ -61,18 +61,29 @@ window.addEventListener("scroll", function () {
 
 // ===== Scroll Fade Animation =====
 const animateTargets = document.querySelectorAll(".animate");
+let windowHeight = window.innerHeight;
+let ticking = false;
 
 function scrollFade() {
-    let windowHeight = window.innerHeight;
-
     for (let i = 0; i < animateTargets.length; i++) {
-        let elementTop = animateTargets[i].getBoundingClientRect().top;
+        const rect = animateTargets[i].getBoundingClientRect();
 
-        if (elementTop < windowHeight - 120) {
+        if (rect.top < windowHeight - 120) {
             animateTargets[i].classList.add("is-show");
         }
     }
+    ticking = false;
 }
 
-window.addEventListener("scroll", scrollFade);
+window.addEventListener("scroll", () => {
+    if (!ticking) {
+        window.requestAnimationFrame(scrollFade);
+        ticking = true;
+    }
+});
+
+window.addEventListener("resize", () => {
+    windowHeight = window.innerHeight;
+});
+
 window.addEventListener("load", scrollFade);
