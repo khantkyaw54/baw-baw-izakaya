@@ -639,9 +639,12 @@ body.no-scroll {
 }
 
 .background {
+    background: url(../images/main-image01.webp)no-repeat 25% center/cover;
     position: fixed;
-    inset: 0;
-    /* top:0 left:0 right:0 bottom:0 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
     z-index: -999;
     overflow: hidden;
 
