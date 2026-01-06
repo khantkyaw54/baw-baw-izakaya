@@ -639,7 +639,7 @@ body.no-scroll {
 }
 
 .background {
-    background: url(../images/main-image01.webp)no-repeat 25% center/cover;
+    background: url(../images/main-image.webp)no-repeat 25% center/cover;
     position: fixed;
     top: 0;
     left: 0;
@@ -1169,7 +1169,7 @@ body.no-scroll {
 
 .menu__mainvisual {
     padding: rem(250) 0 rem(150);
-    background: url(../images/menu-image01.webp) no-repeat 40% center / cover;
+    background: url(../images/menu-image.png) no-repeat 40% center / cover;
 
 
 
@@ -1180,7 +1180,7 @@ body.no-scroll {
     @include mq(desktop) {
         position: relative;
         background-attachment: fixed;
-        background: url(../images/menu-image01.webp) no-repeat 40% center / cover;
+        background: url(../images/menu-image.png) no-repeat 40% center / cover;
 
     }
 
