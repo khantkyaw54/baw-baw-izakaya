@@ -1165,6 +1165,9 @@ body.no-scroll {
 // ================================================================
 .menu-page-title {
     color: #fff;
+    opacity: 0;
+    transform: translateY(rem(20));
+    animation: fadeUp 1.2s ease-out forwards;
 
     &::after {
         background-image: url(../images/title-after-line-white.png);
@@ -1173,7 +1176,7 @@ body.no-scroll {
 
 .menu__mainvisual {
     padding: rem(250) 0 rem(150);
-    background: url(../images/menu-image.webp) no-repeat 40% center / cover;
+    background: url(../images/menu-image02.webp) no-repeat 40% center / cover;
     background-attachment: scroll;
     position: relative;
     z-index: 998;
@@ -1191,6 +1194,9 @@ body.no-scroll {
 // ================================================================
 .icon {
     padding: rem(120) 0;
+    opacity: 0;
+    transform: translateY(rem(20));
+    animation: fadeUp 1.2s ease-out forwards;
 
     text-align: center;
     position: relative;
