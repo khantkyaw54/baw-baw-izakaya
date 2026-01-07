@@ -592,6 +592,8 @@ body.no-scroll {
     &__img {
         max-width: 20%;
         max-height: 20%;
+        width: rem(290);
+        height: auto;
     }
 
     &__text {
@@ -1176,7 +1178,7 @@ body.no-scroll {
 
 .menu__mainvisual {
     padding: rem(250) 0 rem(150);
-    background: url(../images/menu-image02.webp) no-repeat 40% center / cover;
+    background: url(../images/menu-image01.webp) no-repeat center center/ cover;
     position: relative;
     z-index: 1;
 

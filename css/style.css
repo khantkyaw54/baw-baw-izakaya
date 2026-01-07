@@ -384,6 +384,8 @@ body.no-scroll {
 .mainvisual__img {
   max-width: 20%;
   max-height: 20%;
+  width: 18.125rem;
+  height: auto;
 }
 .mainvisual__text {
   color: #fff;
@@ -1021,7 +1023,7 @@ body.no-scroll {
 
 .menu__mainvisual {
   padding: 15.625rem 0 9.375rem;
-  background: url(../images/menu-image02.webp) no-repeat 40% center/cover;
+  background: url(../images/menu-image01.webp) no-repeat center center/cover;
   position: relative;
   z-index: 1;
 }
