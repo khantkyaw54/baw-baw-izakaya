@@ -48,6 +48,8 @@ backToTop.addEventListener('click', () => {
 });
 
 
+
+
 //header bar
 window.addEventListener("scroll", function () {
     const header = document.querySelector(".header");

@@ -19,7 +19,7 @@ html {
 }
 .body-background-pic01 {
   position: fixed;
-  top: 15.625rem;
+  top: 13.125rem;
   right: 6.25rem;
   width: 15.625rem;
   height: auto;
@@ -34,7 +34,7 @@ html {
   .body-background-pic02 {
     display: block;
     position: fixed;
-    top: 15.625rem;
+    top: 13.125rem;
     left: 6.25rem;
     width: 12.5rem;
     height: auto;
@@ -1021,13 +1021,6 @@ body.no-scroll {
   background-attachment: scroll;
   position: relative;
   z-index: 998;
-}
-@media (width >= 740px) {
-  .menu__mainvisual {
-    position: relative;
-    background-attachment: fixed;
-    background: url(../images/menu-image.webp) no-repeat 40% center/cover;
-  }
 }
 .menu__mainvisual__inner {
   max-width: 1000px;

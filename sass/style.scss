@@ -178,7 +178,7 @@ html {
 
     &-pic01 {
         position: fixed;
-        top: rem(250);
+        top: rem(210);
         right: rem(100);
 
         width: rem(250);
@@ -196,7 +196,7 @@ html {
         @include mq(desktop) {
             display: block;
             position: fixed;
-            top: rem(250);
+            top: rem(210);
             left: rem(100);
 
             width: rem(200);
@@ -1174,19 +1174,9 @@ body.no-scroll {
 .menu__mainvisual {
     padding: rem(250) 0 rem(150);
     background: url(../images/menu-image.webp) no-repeat 40% center / cover;
-
-
-
     background-attachment: scroll;
     position: relative;
     z-index: 998;
-
-    @include mq(desktop) {
-        position: relative;
-        background-attachment: fixed;
-        background: url(../images/menu-image.webp) no-repeat 40% center / cover;
-
-    }
 
     &__inner {
         @include inner();
