@@ -44,6 +44,9 @@
     <!-- React (deferred) -->
     <script src="https://unpkg.com/react@18/umd/react.production.min.js" defer crossorigin></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" defer crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+
 
     <!-- Babel (only if really needed) -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js" defer></script>
@@ -121,7 +124,7 @@
                         <div class="icon-item">
                             <a href="#lunch">
                                 <div class="icon-circle">
-                                    <img src="./images/lunch-set-icon 15.29.53.png" alt="lunch-icon" loading="lazy">
+                                    <img src="./images/lunch-set-icon.png" alt="lunch-icon" loading="lazy">
                                 </div>
                                 <p class="icon-label-jp">ランチセット</p>
                                 <p class="icon-label-en">lunch-set</p>
@@ -170,7 +173,7 @@
                                 <div class="icon-circle">
                                     <img src="./images/dessert-icon.png" alt="dessert-icon" loading="lazy">
                                 </div>
-                                <p class="icon-label-jp">デザート</p>
+                                <p class="icon-label-jp">デザート</p>
                                 <p class="icon-label-en">dessert</p>
                             </a>
                         </div>
@@ -197,13 +200,15 @@
             </section>
             <section class="popular">
                 <div class="popular__inner">
-                    <h3 class="popular__title " id="popular">
+                    <div class="popular__title" id="popular">
                         <div class="icon-circle">
-                            <img src="./images/popular-food-icon.png" alt="popular-icon" loading="lazy">
+                            <img src="./images/popular-food-icon.png" alt="Popular food icon" loading="lazy">
                         </div>
-                        <p class="icon-label-jp">人気</p>
-                        <p class="icon-label-en">popular</p>
-                    </h3>
+                        <h3>
+                            <span class="icon-label-jp">人気</span>
+                            <span class="icon-label-en">Popular</span>
+                        </h3>
+                    </div>
                     <p class="popular__mark mark">お客様に人気の料理、迷ったらこちらがおすすめ。</p>
                     <!-- <div class="popular__items">
 
@@ -258,13 +263,15 @@
             <section class="lunch">
                 <div class="lunch__inner">
                     <img src="./images/lunch-background.png" alt="lunch-pic" class="lunch__pic" loading="lazy">
-                    <h3 class="lunch__title " id="lunch">
+                    <div class="lunch__title" id="lunch">
                         <div class="icon-circle">
-                            <img src="./images/lunch-set-icon 15.29.53.png" alt="lunch-icon" loading="lazy">
+                            <img src="./images/lunch-set-icon.png" alt="Lunch set icon" loading="lazy">
                         </div>
-                        <p class="icon-label-jp">ランチセット</p>
-                        <p class="icon-label-en">lunch-set</p>
-                    </h3>
+                        <h3>
+                            <span class="icon-label-jp">ランチセット</span>
+                            <span class="icon-label-en">Lunch Set</span>
+                        </h3>
+                    </div>
                     <p class="lunch__mark mark">月曜〜金曜の11時から15時までのランチセット</p>
                     <!-- <div class="lunch__items">
                         <div class="lunch__post post">
@@ -310,13 +317,15 @@
 
             <section class="drink">
                 <div class="drink__inner">
-                    <h3 class="drink__title " id="drinks">
+                    <div class="drink__title" id="drinks">
                         <div class="icon-circle">
-                            <img src="./images/drink-icon.png" alt="drink-icon" loading="lazy">
+                            <img src="./images/drink-icon.png" alt="Drink icon" loading="lazy">
                         </div>
-                        <p class="icon-label-jp">ドリンク</p>
-                        <p class="icon-label-en">drinks</p>
-                    </h3>
+                        <h3>
+                            <span class="icon-label-jp">ドリンク</span>
+                            <span class="icon-label-en">Drinks</span>
+                        </h3>
+                    </div>
                     <p class="drink__mark mark">飲み放題(120分):2500円</p>
                     <div class="drink__post">
                         <div class="drink__post__item">
@@ -389,13 +398,15 @@
             </section>
             <section class="salad">
                 <div class="salad__inner">
-                    <h3 class="salad__title" id="salad">
+                    <div class="salad__title" id="salad">
                         <div class="icon-circle">
-                            <img src="./images/salad-icon.png" alt="salad-icon" loading="lazy">
+                            <img src="./images/salad-icon.png" alt="Salad icon" loading="lazy">
                         </div>
-                        <p class="icon-label-jp">サラダ</p>
-                        <p class="icon-label-en">salad</p>
-                    </h3>
+                        <h3>
+                            <span class="icon-label-jp">サラダ</span>
+                            <span class="icon-label-en">Salad</span>
+                        </h3>
+                    </div>
                     <p class="salad__mark mark">ミャンマーの定番サラダ</p>
                     <div class="salad__post">
                         <div class="salad__post__item">
@@ -442,13 +453,15 @@
             </section>
             <section class="ramen">
                 <div class="ramen__inner">
-                    <h3 class="ramen__title" id="ramen">
+                    <div class="ramen__title" id="ramen">
                         <div class="icon-circle">
-                            <img src="./images/ramen-icon.png" alt="ramen-icon" loading="lazy">
+                            <img src="./images/ramen-icon.png" alt="Ramen icon" loading="lazy">
                         </div>
-                        <p class="icon-label-jp">ラーメン</p>
-                        <p class="icon-label-en">ramen</p>
-                    </h3>
+                        <h3>
+                            <span class="icon-label-jp">ラーメン</span>
+                            <span class="icon-label-en">Ramen</span>
+                        </h3>
+                    </div>
                     <p class="ramen__mark mark">ミャンマー伝統の麺料理</p>
                     <div class="ramen__post">
                         <div class="ramen__post__item">
@@ -487,13 +500,15 @@
             </section>
             <section class="fries">
                 <div class="fries__inner">
-                    <h3 class="fries__title" id="fries">
+                    <div class="fries__title" id="fries">
                         <div class="icon-circle">
-                            <img src="./images/fries-icon.png" alt="fries-icon" loading="lazy">
+                            <img src="./images/fries-icon.png" alt="Fried food icon" loading="lazy">
                         </div>
-                        <p class="icon-label-jp">揚げ物</p>
-                        <p class="icon-label-en">fries</p>
-                    </h3>
+                        <h3>
+                            <span class="icon-label-jp">揚げ物</span>
+                            <span class="icon-label-en">Fried</span>
+                        </h3>
+                    </div>
                     <p class="fries__mark mark">サクサク食感の揚げ物</p>
                     <div class="fries__post">
                         <div class="fries__post__item">
@@ -535,13 +550,15 @@
             </section>
             <section class="dessert">
                 <div class="dessert__inner">
-                    <h3 class="dessert__title" id="dessert">
+                    <div class="dessert__title" id="dessert">
                         <div class="icon-circle">
-                            <img src="./images/dessert-icon.png" alt="dessert-icon" loading="lazy">
+                            <img src="./images/dessert-icon.png" alt="Dessert icon" loading="lazy">
                         </div>
-                        <p class="icon-label-jp">デザート</p>
-                        <p class="icon-label-en">dessert</p>
-                    </h3>
+                        <h3>
+                            <span class="icon-label-jp">デザート</span>
+                            <span class="icon-label-en">Dessert</span>
+                        </h3>
+                    </div>
                     <p class="dessert__mark mark">食後にぴったりの甘いデザート</p>
                     <div class="dessert__post">
                         <div class="dessert__post__item">
@@ -576,13 +593,15 @@
             </section>
             <section class="soup">
                 <div class="soup__inner">
-                    <h3 class="soup__title" id="soup">
+                    <div class="soup__title" id="soup">
                         <div class="icon-circle">
-                            <img src="./images/soup-icon.png" alt="soup-icon" loading="lazy">
+                            <img src="./images/soup-icon.png" alt="Soup icon" loading="lazy">
                         </div>
-                        <p class="icon-label-jp">スープ</p>
-                        <p class="icon-label-en">soup</p>
-                    </h3>
+                        <h3>
+                            <span class="icon-label-jp">スープ</span>
+                            <span class="icon-label-en">Soup</span>
+                        </h3>
+                    </div>
                     <p class="soup__mark mark">体が温まるミャンマーのスープ</p>
                     <div class="soup__post">
                         <div class="soup__post__item">
@@ -621,13 +640,15 @@
             </section>
             <section class="grilled">
                 <div class="grilled__inner">
-                    <h3 class="grilled__title" id="grilled">
+                    <div class="grilled__title" id="grilled">
                         <div class="icon-circle">
-                            <img src="./images/grilled-icon.png" alt="grilled-icon" loading="lazy">
+                            <img src="./images/grilled-icon.png" alt="Grilled food icon" loading="lazy">
                         </div>
-                        <p class="icon-label-jp">焼き物</p>
-                        <p class="icon-label-en">grilled</p>
-                    </h3>
+                        <h3>
+                            <span class="icon-label-jp">焼き物</span>
+                            <span class="icon-label-en">Grilled</span>
+                        </h3>
+                    </div>
                     <p class="grilled__mark mark">お酒に合うグリルメニュー</p>
                     <div class="grilled__post">
                         <div class="grilled__post__item">
@@ -696,8 +717,6 @@
             <small class="footer__copy">&copy; 2025 BAW BAW. All Rights Reserved.</small>
 
         </div>
-
-
     </footer>
     <script src="./script.js"></script>
     <script type="text/babel" src="./react/popular.js"></script>
