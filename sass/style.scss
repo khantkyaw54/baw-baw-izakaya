@@ -147,6 +147,12 @@ $breakpoints: (
     }
 }
 
+.icon__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 small {
     font-size: rem(12);
     color: $color-text;
@@ -155,8 +161,6 @@ small {
     font-weight: bold;
     color: $color-accent;
 }
-
-
 
 // =================================================================
 //  index
@@ -555,7 +559,7 @@ h1 {
     cursor: pointer;
     z-index: 1001;
 
-    span {
+    & span {
         display: block;
         height: 5px;
         background: #fff; // default line color
@@ -1346,7 +1350,7 @@ body.no-scroll {
 // drink
 // ================================================================
 .drink {
-    padding: rem(60) 0;
+    padding: rem(120) 0 rem(60) 0;
 
 
     &__inner {
