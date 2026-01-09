@@ -1029,16 +1029,18 @@ body.no-scroll {
 
 .menu__mainvisual {
   padding: 15.625rem 0 9.375rem;
-  background: url(../images/menu-image01.webp) no-repeat center center/cover;
+  background-image: url("../images/menu-image01.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   position: relative;
-  z-index: 1;
 }
 .menu__mainvisual::before {
   content: "";
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.35);
-  z-index: -1;
+  z-index: 1;
 }
 .menu__mainvisual__inner {
   max-width: 1000px;
@@ -1050,7 +1052,7 @@ body.no-scroll {
 }
 
 .icon {
-  padding: 7.5rem 0;
+  padding: 7.5rem 0 3.75rem 0;
   opacity: 0;
   transform: translateY(1.25rem);
   -webkit-animation: fadeUp 1.2s ease-out forwards;

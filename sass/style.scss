@@ -1182,31 +1182,54 @@ body.no-scroll {
 
 .menu__mainvisual {
     padding: rem(250) 0 rem(150);
-    background: url(../images/menu-image01.webp) no-repeat center center/ cover;
+    background-image: url("../images/menu-image01.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     position: relative;
-    z-index: 1;
 
-    // dark overlay
     &::before {
         content: "";
         position: absolute;
         inset: 0;
-        background: rgba(0, 0, 0, 0.35); // ← adjust darkness here
-        z-index: -1;
+        background: rgba(0, 0, 0, 0.35);
+        z-index: 1;
     }
 
     &__inner {
         @include inner();
         position: relative;
-        z-index: 2; // keep text above overlay
+        z-index: 2;
     }
 }
+
+// .menu__mainvisual {
+//     padding: rem(250) 0 rem(150);
+//     background: url(../images/menu-image01.webp) no-repeat center center/ cover;
+//     position: relative;
+//     z-index: 1;
+
+//     // dark overlay
+//     &::before {
+//         content: "";
+//         position: absolute;
+//         inset: 0;
+//         background: rgba(0, 0, 0, 0.35); // ← adjust darkness here
+//         z-index: -1;
+//     }
+
+//     &__inner {
+//         @include inner();
+//         position: relative;
+//         z-index: 2; // keep text above overlay
+//     }
+// }
 
 // ================================================================
 // icons
 // ================================================================
 .icon {
-    padding: rem(120) 0;
+    padding: rem(120) 0 rem(60) 0;
     opacity: 0;
     transform: translateY(rem(20));
     animation: fadeUp 1.2s ease-out forwards;
