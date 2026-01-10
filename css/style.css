@@ -978,12 +978,11 @@ body.no-scroll {
   font-size: 1.125rem;
 }
 .footer__sns-icon {
-  display: block;
   width: 2.8125rem;
   height: 2.8125rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
   margin: 0 0.75rem;
   transition: transform 0.3s ease;
 }
@@ -997,6 +996,18 @@ body.no-scroll {
   margin-top: 1.25rem;
   display: block;
   font-weight: bold;
+}
+
+.instagram {
+  background-image: url(../images/instagram.png);
+}
+
+.facebook {
+  background-image: url(../images/facebook.png);
+}
+
+.tiktok {
+  background-image: url(../images/tiktok.png);
 }
 
 .item-active {

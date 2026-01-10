@@ -1122,19 +1122,19 @@ body.no-scroll {
         font-size: rem(18);
 
         &-icon {
-            display: block;
             width: rem(45);
             height: rem(45);
-            display: flex;
-            justify-content: center;
-            align-items: center;
 
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
             margin: 0 rem(12);
             transition: transform 0.3s ease;
 
             &:hover {
                 transform: scale(1.15);
             }
+
         }
     }
 
@@ -1148,6 +1148,17 @@ body.no-scroll {
     }
 }
 
+.instagram {
+    background-image: url(../images/instagram.png);
+}
+
+.facebook {
+    background-image: url(../images/facebook.png);
+}
+
+.tiktok {
+    background-image: url(../images/tiktok.png);
+}
 
 .item-active {
     color: $color-accent;
