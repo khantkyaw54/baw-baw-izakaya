@@ -361,6 +361,11 @@ h1 {
     margin-left: 6px;
     transition: transform 0.25s ease;
     opacity: 0.7;
+    display: none;
+
+    @include mq(desktop) {
+        display: inline-block;
+    }
 }
 
 @include mq(desktop) {
@@ -1117,13 +1122,24 @@ body.no-scroll {
         font-size: rem(18);
 
         &-icon {
-            width: rem(40);
-            height: rem(40);
-            margin: 0 rem(12);
-            transition: transform 0.3s ease;
+            width: 40px;
+            height: 40px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            transition: all 0.3s ease;
+
 
             &:hover {
                 transform: scale(1.15);
+            }
+
+            & img {
+                display: block;
+                max-width: 100%;
+                max-height: 100%;
+
             }
         }
     }
