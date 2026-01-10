@@ -978,21 +978,17 @@ body.no-scroll {
   font-size: 1.125rem;
 }
 .footer__sns-icon {
-  width: 40px;
-  height: 40px;
-  display: inline-flex;
-  align-items: center;
+  display: block;
+  width: 2.8125rem;
+  height: 2.8125rem;
+  display: flex;
   justify-content: center;
-  overflow: hidden;
-  transition: all 0.3s ease;
+  align-items: center;
+  margin: 0 0.75rem;
+  transition: transform 0.3s ease;
 }
 .footer__sns-icon:hover {
   transform: scale(1.15);
-}
-.footer__sns-icon img {
-  display: block;
-  max-width: 100%;
-  max-height: 100%;
 }
 .footer__copy {
   text-align: center;
