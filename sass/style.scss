@@ -1183,12 +1183,11 @@ body.no-scroll {
 
 .menu__mainvisual {
     padding: rem(250) 0 rem(150);
-    background-image: url("../images/menu-image01.webp");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background: url("../images/menu-image01.webp") no-repeat center center/cover;
     position: relative;
     z-index: 1;
+    background-attachment: fixed;
+
 
     &::before {
         content: "";
