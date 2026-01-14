@@ -754,14 +754,10 @@ body.no-scroll {
 // menu
 // =================================================================
 .menu {
-    padding: rem(80) 0 rem(180) 0;
+    padding: rem(80) 0 rem(280) 0;
     background-color: $color-base;
     background-color: $color-main;
     position: relative;
-
-    @include mq(desktop) {
-        padding-bottom: rem(350)
-    }
 
     &__title {
         @include title-main("menu");
@@ -880,13 +876,11 @@ body.no-scroll {
 // =================================================================
 
 .news {
-    padding: rem(180) 0 rem(210) 0;
+    padding: rem(180) 0 rem(280) 0;
     position: relative;
     color: #FFF;
+    background-color: $color-base;
 
-    @include mq(desktop) {
-        padding-bottom: rem(350)
-    }
 
     &__background {
         position: absolute;
@@ -954,6 +948,7 @@ body.no-scroll {
     position: relative;
     padding: rem(180) 0 rem(250) 0;
     background-color: $color-base;
+    margin-top: rem(60);
 
 
     &::before {
