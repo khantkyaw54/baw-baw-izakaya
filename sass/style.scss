@@ -759,6 +759,11 @@ body.no-scroll {
     background-color: $color-main;
     position: relative;
 
+    @include mq(desktop) {
+        padding-bottom: rem(380);
+    }
+
+
     &__title {
         @include title-main("menu");
 
@@ -879,7 +884,12 @@ body.no-scroll {
     padding: rem(180) 0 rem(280) 0;
     position: relative;
     color: #FFF;
-    background-color: $color-base;
+    background-color: $color-main;
+
+    @include mq(desktop) {
+        padding-bottom: rem(380);
+    }
+
 
 
     &__background {
@@ -948,7 +958,6 @@ body.no-scroll {
     position: relative;
     padding: rem(180) 0 rem(250) 0;
     background-color: $color-base;
-    margin-top: rem(60);
 
 
     &::before {
