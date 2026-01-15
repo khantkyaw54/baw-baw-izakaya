@@ -564,7 +564,7 @@ body.no-scroll {
 }
 @media (width >= 740px) {
   .menu {
-    padding-bottom: 23.75rem;
+    padding-bottom: 21.875rem;
   }
 }
 .menu__title {
@@ -735,7 +735,7 @@ body.no-scroll {
 }
 @media (width >= 740px) {
   .news {
-    padding-bottom: 23.75rem;
+    padding-bottom: 21.875rem;
   }
 }
 .news__background {
@@ -1062,7 +1062,12 @@ body.no-scroll {
   background: url("../images/menu-image01.webp") no-repeat center center/cover;
   position: relative;
   z-index: 1;
-  background-attachment: fixed;
+  background-attachment: scroll;
+}
+@media (width >= 740px) {
+  .menu__mainvisual {
+    background-attachment: fixed;
+  }
 }
 .menu__mainvisual::before {
   content: "";
