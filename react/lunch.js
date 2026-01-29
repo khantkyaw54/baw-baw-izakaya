@@ -9,7 +9,7 @@ const lunchData = [
 const Lunch = () => {
     return (
         <div className="lunch__items">
-            {popularData.map((item) => (
+            {lunchData.map((item) => (
                 <div className="lunch__post post" key={item.num}>
                     <img
                         src={item.image}
